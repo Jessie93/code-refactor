@@ -11,24 +11,43 @@
 
 body {
     background-color: #d9dcd6;
+    /* by adding colour to the body was able to remove it from elements that could inherit the property from here */
+    color: #ffffff;
 }
 
-/* Removes bullet points from list */
+/* Adding this to base style as we do not want any lists to have styling, results in removal of list-style-none css further down the sheet */
 ul {
     list-style: none;
 }
 
 a {
+    /* This needs to stay white despite adding colour to the body */
     color: #ffffff;
     text-decoration: none;
 }
 
+/******************************************
+/* FLOATS
+/*******************************************/
+
+.float-left {
+    float: left;
+    margin-right: 25px;
+}
+
+.float-right {
+    float: right;
+    margin-left: 25px;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
 
 .header {
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: #2a607c;
-    color: #ffffff;
 }
 
 .header h1 {
@@ -48,10 +67,7 @@ a {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 20px;
 }
-/* Changed .header div to .header nav to reflect the changes i made in the HTML */
-.header nav ul {
-    list-style-type: none;
-}
+
 /* Changed .header div to .header nav to reflect the changes i made in the HTML */
 .header nav ul li {
     display: inline-block;
@@ -65,16 +81,6 @@ a {
     background-image: url("../images/digital-marketing-meeting.jpg");
     background-size: cover;
     background-position: center;
-}
-
-.float-left {
-    float: left;
-    margin-right: 25px;
-}
-
-.float-right {
-    float: right;
-    margin-left: 25px;
 }
 
 .content {
@@ -99,23 +105,19 @@ a {
     clear: both;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: center;
+    /* changing font colour of footer back to black having utilised body selector to save repeating of color: #ffffff */
+    color: black;
 }
 
 .footer h2 {
     font-size: 20px;
 }
 
-/******************************************
-/* ADDITIONAL STYLES
-/*******************************************/
-
-
 /* These all have the same properties added to them */
 .benefit-lead,
 .benefit-brand,
 .benefit-cost {
     margin-bottom: 32px;
-    color: #ffffff;
 }
 
 /* These all have the same properties added to them */
@@ -144,7 +146,6 @@ a {
     height: 300px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #0072bb;
-    color: #ffffff;
 }
 
 /* These all have the same properties added to them */
