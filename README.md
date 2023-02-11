@@ -13,8 +13,8 @@ A bonus to the refactoring is an improvement in the SEO.
 
 ## Technologies Used
 This project was created using 
-*HTML
-*CSS
+* HTML
+* CSS
 
 
 ## Screenshot
@@ -30,6 +30,12 @@ The following image shows the web application's appearance and functionality:
 ## Deployed Page
 Link to the deployed site
 https://jessie93.github.io/horiseon-code-refactor/
+
+## Installation
+
+To run the application, follow these steps:
+* Clone the repository using the command git clone git@github.com:Jessie93/horiseon-code-refactor.git
+* Open the index.html file in your browser to view the application.
 
 
 ## License 
